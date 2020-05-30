@@ -49,7 +49,7 @@ Your program should output: (1) polygons ordered from outside to inside and (2) 
 - A list of polygons ordered from outside to inside. If multuple polygons have the same nesting level, order them by area. Each line of your terminal output (System.out) will contain 
   1. the name of the polygon
   2. the area of the polygon
-- An image file, in svg format. 
+- An image file, in Scalable Vector Graphics (svg) format. 
   - The image filename must be named **output.svg**
   - [Scalable Vector Graphics](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics), i.e svg, files are supported by most modern web browsers. To view your svg file, for example, you can drag and drop it to Google Chrome. 
 - See [example output](#examples) below; your program must reproduce the same output.
