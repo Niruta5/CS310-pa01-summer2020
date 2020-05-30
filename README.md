@@ -1,11 +1,11 @@
 # Painting Nested Polygons
 
-- CS 310 Programming Assignment 1 Due: **June 18th** 11:59pm, 2018
+- CS 310 Programming Assignment 1 Due: **June 8th (Monday)** 11:59pm, 2020
 
 <img src="output/example2.svg" width="800">
 
 ## Assignment Objective
-- Write a program to paint nested polygons
+- Write a program that paints nested polygons in correct order
 - Build linked list to represent polygon and store a list of polygons
 - Sort polygons in nested order from outside to inside
 - Write a method to check if a polygon is inside another polygon using *winding number*; [Learn more about winding number from Wikipedia](https://en.wikipedia.org/wiki/Winding_number)
