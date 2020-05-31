@@ -4,7 +4,7 @@ import java.util.Comparator;
 
 //
 // finish the implementation of a generic double linked list
-// total 4 tasks (75%) in this files
+// total 2 tasks (4 methods, 75%) in this files
 //
 
 public class SimpleLinkedList<T>
@@ -33,11 +33,11 @@ public class SimpleLinkedList<T>
 
   //sort all elements in this list in decending order
   //(25%)
-  public void bubble_sort(Comparator<T> comp)
+  public void quick_sort(Comparator<T> comp)
   {
     //TODO: your code here
-    //you can find bubble sort pseudocode here:
-    //https://en.wikipedia.org/wiki/Bubble_sort#Pseudocode_implementation
+    //you can find quick sort pseudocode here:
+    //https://en.wikipedia.org/wiki/Quicksort
   }
 
   //test function
@@ -55,8 +55,8 @@ public class SimpleLinkedList<T>
 
     System.out.println(sLL.toString());
 
-    //sLL.reverse();
-    //System.out.println(sLL.toString());
+    sLL.reverse();
+    System.out.println(sLL.toString());
 
     sLL.bubble_sort(new Comparator<String>(){
       public int compare(String a, String b){return a.compareTo(b);}

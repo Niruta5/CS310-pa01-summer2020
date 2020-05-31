@@ -9,7 +9,7 @@ import java.io.IOException;
 // this file defines a polygon painter class
 // It maintains a list of sorted polygons
 //
-// total 2 tasks (20%) in this files
+// total 1 task1 (15%) in this files
 //
 
 public class PaintPolygons
@@ -26,15 +26,6 @@ public class PaintPolygons
       //TODO: your code here
       return 0;
     }
-  }
-
-  //
-  // print the polygons to screen in sorted order
-  // (5%)
-  //
-  public void print()
-  {
-    //TODO: your code here
   }
 
   //---------------------------------------------------------------------------
@@ -60,6 +51,19 @@ public class PaintPolygons
   public void sortPolygons()
   {
       m_polys.bubble_sort(new PolygonComparator());
+  }
+
+  //
+  // print the polygons to screen
+  //
+  public void print()
+  {
+    ListItem<Polygon> ptr=m_polys.getHead();
+    while(ptr!=null)
+    {
+      System.out.println("polygon "+ptr.data.name+" area= "+ptr.data.area());
+      ptr=ptr.next;
+    }
   }
 
   //save the polygons to output.svg in sorted order
