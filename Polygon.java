@@ -73,8 +73,6 @@ public class Polygon
   //compute the winding number of a given point at (x,y)
   public int winding_number(double x, double y)
   {
-    //your code here
-    //return Integer.MAX_VALUE;
     double winding=0;
     Point q=new Point(x,y);
     ListItem<Point> head=m_vertices.getHead();
