@@ -115,6 +115,7 @@ Please familiarize yourself with these terms and their definitions before you mo
   - Otherwise, the all points in A must have zero winding number with respect to B AND all points in B must have zero winding number with respect to A
 
 
+
 ## Tasks
 
 There are **5** tasks in this assignment. It is recommended that you implement these tasks in the given order. 
@@ -146,7 +147,7 @@ public float area()
 public void sortPolygons()
 ```
 
-### Task 1: Implement Linkede List (50%)
+### Task 1: Implement Linked List (50%)
 ```java
 //in SimpleLinkedList.java
 
@@ -174,11 +175,9 @@ public void reverse()
 
 ***Note***: You can test your implementation of these methods using ```java SimpleLinkedList```. This command runs the main function in SimpleLinkedList.java
 
-### Task 3: Sort List (25%)
+### Task 2: Sort List (25%)
 
-**Note: I recommend you finish Task 3 before working on Task 2**
-
-Implement bubble sort using a given comparator. This method will be used to sort polygons if polygon comparator is given.
+Implement quick sort using a given comparator. This method will be used to sort polygons if polygon comparator is given.
 You should verify your implementation of the function using simpler data types, such as Integer or String. See the note in Task 1.
 
 ```java
@@ -186,15 +185,15 @@ You should verify your implementation of the function using simpler data types, 
 
 //sort all elements in this list in decending order
 //(25%)
-public void bubble_sort(Comparator<T> comp)
+public void quick_sort(Comparator<T> comp)
 {
 	//TODO: your code here
-	//you can find bubble sort pseudocode here:
-	//https://en.wikipedia.org/wiki/Bubble_sort#Pseudocode_implementation
+	//you can find quick sort pseudocode here:
+	//https://en.wikipedia.org/wiki/Quicksort
 }
 ```
 
-### Task 2: Imeplement Polygon Comparator (15%)
+### Task 3: Imeplement Polygon Comparator (15%)
 ```java
 //in PaintPolygons.java
 
@@ -214,7 +213,7 @@ private class PolygonComparator implements Comparator<Polygon>
 
 
 
-### Task 5: Complete README.txt (5%)
+### Task 4: Complete README.txt (5%)
 
 Fill out README.txt **(NOT README.md, which is this document)** with your information (goes in your user folder)
 Provide sufficient details in README.txt to help us understand your code.
@@ -226,7 +225,7 @@ Provide sufficient details in README.txt to help us understand your code.
 1. Have a style (indentation, good variable names, etc.)
 2. Comment your code well in JavaDoc style (no need to overdo it, just do it well)
 3. Have code that compiles with the command: javac *.java in your user directory
-4. **Print regions to terminal by size, large to small**
+4. **Print regions to terminal in the required order**
 
 ### You may 
 
@@ -246,10 +245,9 @@ import java.io.FileNotFoundException;
 3. Copy code from your text book _Data Structures and Problem Solving Using Java_, 4th Edition by _Mark A. Weiss_
 
 ## Submission Instructions
-- Use the cloud or some other server to backup your code!
+- Important: Use the cloud or some other server (e.g. github) to backup your code! This will save your life when you submit the wrong version of your code. 
 - Remove all test files, jar files, class files, etc.
-- You should just submit your java files and your readme.txt
-- Zip your user folder (not just the files) and name the zip “username-p1.zip” (no other type of archive) where “username” is your username.
+- Zip your user folder (not just the files) and name the zip **username-p1.zip** (no other type of archive) where “username” is your GMU username when you log into patriotweb.
 - Submit to blackboard.
 
 ## Grading Rubric
@@ -274,16 +272,19 @@ import java.io.FileNotFoundException;
 ```
 diff your-output.svg my-ouput.svg
 ```
+If there is any difference, your code fails this paritular test. There will be in total 10 tests and 10 points per test.
 
-#### Manual Code Inspection Rubric (10% "off the top" points)
-These are all "off the top" points (i.e. items that will lose you points rather than earn you points):
-
+#### Coding Style: Manual Code Inspection Rubric (10% "off the top" points)
 Inspection Point | Points | High (all points) | Med (1/2 points) | Low (no points)
 :---: | :---: | :--- | :--- | :--- 
 Submission Format (Folder Structure) |  2 |  Code is in a folder which in turn is in a zip file. Folder is correctly named. | Code is not directly in user folder, but in a sub-folder. Folder name is correct or close to correct. | Code is directly in the zip file (no folder) and/or folder name is incorrect.
 Code Formatting | 2 | Code has a set indentation and formatting style which is kept consistent throughout and code looks "well laid out".| Code has a mostly consistent indentation and formatting style, but one or more parts do not match.|Code indentation and formatting style changes throughout the code and/or the code looks "messy".
 JavaDocs | 3 | The entire code base is well documented with meaningful comments in JavaDoc format. Each class, method, and field has a comment describing its purpose. Occasional in-method comments used for clarity. | The code base has some comments, but is lacking comments on some classes/methods/fields or the comments given are mostly "translating" the code. | The only documentation is what was in the template and/or documentation is missing from the code (e.g. taken out).
 Coding conventions | 3 | Code has good, meaningful variable, method, and class names. All (or almost all) added fields and methods are properly encapsulated. For variables, only class constants are public. | Names are mostly meaningful, but a few are unclear or ambiguous (to a human reader) [and/or] Not all fields and methods are properly encapsulated. |  Names often have single letter identifiers and/or incorrect/meaningless identifiers. [Note: i/j/k acceptable for indexes.] [and/or] Many or all fields and methods are public or package default.
+
+#### Tasks: Manual Code Inspection (Optional)
+If your code failed more than 3 out of 10 tests above,  you may request a manual inspection and you will be graded based on the points assigned to each task. 
+If you request a manual inspection, you can no longer use the score you get from "Manual/Automatic Testing"; 
 
 ### External Links
 - N/A
