@@ -50,7 +50,7 @@ public class PaintPolygons
   //(i.e., small to large)
   public void sortPolygons()
   {
-      m_polys.bubble_sort(new PolygonComparator());
+      m_polys.quick_sort(new PolygonComparator());
   }
 
   //

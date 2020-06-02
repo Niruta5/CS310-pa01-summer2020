@@ -58,7 +58,7 @@ public class SimpleLinkedList<T>
     sLL.reverse();
     System.out.println(sLL.toString());
 
-    sLL.bubble_sort(new Comparator<String>(){
+    sLL.quick_sort(new Comparator<String>(){
       public int compare(String a, String b){return a.compareTo(b);}
     });
     System.out.println("In decending order: "+sLL.toString());
@@ -68,7 +68,7 @@ public class SimpleLinkedList<T>
     iLL.add(21);
     iLL.add(3);
     System.out.println(iLL.toString());
-    iLL.bubble_sort(new Comparator<Integer>(){
+    iLL.quick_sort(new Comparator<Integer>(){
       public int compare(Integer a, Integer b){return a-b;}
     });
     System.out.println("In decending order: "+iLL.toString());
