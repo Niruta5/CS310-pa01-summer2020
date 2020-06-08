@@ -120,7 +120,7 @@ Please familiarize yourself with these terms and their definitions before you mo
 
 There are **5** tasks in this assignment. It is recommended that you implement these tasks in the given order. 
 
-### Task 0: Read the given code (0%)
+### Task 0: Read the given code (5%)
 
 Read and familiarize yourself with the code, in particular the following classes and methods
 
