@@ -53,7 +53,7 @@ public class SimpleLinkedList<T>
     sLL.add("xyz");
     sLL.add("gmu");
 
-    System.out.println(sLL.toString());
+    //System.out.println(sLL.toString());
 
     sLL.reverse();
     System.out.println(sLL.toString());

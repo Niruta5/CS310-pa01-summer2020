@@ -149,10 +149,12 @@ public class Polygon
     //angle between this vector and the given vector
     public double angle(Vector v)
     {
-      double d=this.normalize().dot(v.normalize());
-      double r=Math.acos(d);
-      if( cross(v)<0 ) r=-r;
-      return r;
+      if(this.normsqr()==0 || v.normsqr()==0) return 0;
+      double d=this.normalize().dot(v.normalize());
+      if(d>1) d=1; else if(d<-1) d=-1; //ADD THIS LINE
+      double r=Math.acos(d);
+      if( cross(v)<0 ) r=-r;
+      return r;
     }
 
     //private data
