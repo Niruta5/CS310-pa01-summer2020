@@ -46,7 +46,7 @@
 
 Your program should output: (1) polygons ordered from outside to inside and (2) a SVG image.
 
-- A list of polygons ordered from outside to inside. If multuple polygons have the same nesting level, order them by area. Each line of your terminal output (System.out) will contain 
+- A list of polygons ordered from outside to inside. If multuple polygons have the same nesting level, order them by area in descending order (i.e., large to small). Each line of your terminal output (System.out) will contain 
   1. the name of the polygon
   2. the area of the polygon
 - An image file, in Scalable Vector Graphics (svg) format. 
@@ -142,8 +142,8 @@ public float area()
 //in PaintPolygons.java
 
 //sort the polygons from outside to inside
-//if two polygons are in the same level, sort by areas in ascending order
-//(i.e., small to large)
+//if two polygons are in the same level, sort by areas in descending order
+//(i.e., large to small)
 public void sortPolygons()
 ```
 
